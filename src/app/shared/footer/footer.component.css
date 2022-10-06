@@ -1,0 +1,9 @@
+svg{
+  margin-top: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+.mat-elevation-z4{
+  background: #808080;
+}
+.mat-elevation-z4:hover{
+  cursor: pointer;
+}
+
+.total{
+  font-weight:bold;
+  color:#FFF;
+}
+
+:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color:#FFF;
+}
+
+:host ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline {
+  color:#FFF;
+
+}
+
+:host ::ng-deep .mat-input-element {
+  color:#FFF !important;
+}
+
+
+:host ::ng-deep .mat-input-element::placeholder {
+  color:#FFF !important;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color:#FFF !important;
+}
+

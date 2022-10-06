@@ -1,0 +1,32 @@
+
+<div fxLayout fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="4px">
+  <mat-form-field appearance="outline" fxFlex="85%" fxFlex.xs="80%">
+    <mat-label>Search</mat-label>
+    <input matInput placeholder="..." (keyup)="applyFilter($event)">
+  </mat-form-field>
+</div>
+
+<div fxLayout fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="4px">
+  <div fxFlex="85%">
+    <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="10px grid">
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
+      <div fxFlex="5%" fxFlex.xs="25%" fxFlex.sm="33%" *ngFor="let data of iconCollectionMain">
+        <mat-card class="mat-elevation-z4" (click)="copy(data.iconTag)">
+          <mat-icon
+          [ngStyle]="{'color':'white'}"
+          matTooltip="{{ data.iconName }}"
+          matTooltipPosition = "above">
+          {{ data.iconName }}
+        </mat-icon>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<div fxLayout fxLayoutAlign="center" fxLayoutGap="7px" fxLayoutGap.xs="4px">
+  <p class="total">Total numbers of icons are : {{totalIcon}}</p>
+</div>
+
+

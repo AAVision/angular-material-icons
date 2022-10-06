@@ -1,0 +1,15 @@
+
+.header{
+  font-weight:bold;
+  color:#FFF;
+  text-shadow: 0 0 8px #FFF;
+  -webkit-text-stroke: 8px FFF;
+  cursor: pointer;
+  font-size:20px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    display: none;
+  }
+}
